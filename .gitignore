@@ -1,0 +1,22 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+*.swp
+*.swo
+
+# Netlify (if you ever link this repo for deploys)
+.netlify/
+
+# Environment/secrets (good habit even if unused right now)
+.env
+.env.local
+
+# Logs
+*.log
+
+# Node (only relevant if you ever add npm packages — e.g. a build step, linter, or testing tool)
+node_modules/
