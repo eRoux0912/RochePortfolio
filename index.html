@@ -289,73 +289,65 @@
             Let's Work Together
           </h2>
 
-          <form
-            action="https://formsubmit.co/f79dc1125c0b9cb8f0a2fabc2dffded7"
-            method="POST"
-            class="col-11 col-md-8 col-lg-6 mx-auto"
-          >
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                class="form-control contact-input"
-                required
-              />
-            </div>
+         <form
+  action="https://api.web3forms.com/submit"
+  method="POST"
+  class="col-11 col-md-8 col-lg-6 mx-auto"
+>
+  <input type="hidden" name="access_key" value="68d2dc95-fcad-461d-8cde-905f69ae07a2" />
+  <input type="hidden" name="subject" value="New message from portfolio contact form" />
+  <input type="hidden" name="from_name" value="Roché's Portfolio" />
+  <input type="hidden" name="redirect" value="https://eroux0912.github.io/RochePortfolio/#contact" />
 
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                class="form-control contact-input"
-                required
-              />
-            </div>
+  <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      class="form-control contact-input"
+      required
+    />
+  </div>
 
-            <div class="mb-4">
-              <label for="message" class="form-label">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                class="form-control contact-input"
-                required
-              ></textarea>
-            </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      class="form-control contact-input"
+      required
+    />
+  </div>
 
-            <!-- honeypot: hidden from sighted users AND removed from the accessibility tree,
-               so screen readers never announce it and assistive-tech users can't
-               accidentally trigger the spam trap -->
-            <input
-              type="text"
-              name="_honey"
-              aria-hidden="true"
-              tabindex="-1"
-              autocomplete="off"
-              class="honeypot"
-            />
+  <div class="mb-4">
+    <label for="message" class="form-label">Message</label>
+    <textarea
+      id="message"
+      name="message"
+      rows="5"
+      class="form-control contact-input"
+      required
+    ></textarea>
+  </div>
 
-            <!-- turn off their default captcha page so it feels less jarring -->
-            <input type="hidden" name="_captcha" value="false" />
+  <!-- honeypot: hidden from sighted users AND removed from the accessibility tree,
+     so screen readers never announce it and assistive-tech users can't
+     accidentally trigger the spam trap -->
+  <input
+    type="checkbox"
+    name="botcheck"
+    aria-hidden="true"
+    tabindex="-1"
+    autocomplete="off"
+    class="honeypot"
+  />
 
-            <!-- send them somewhere after submit -->
-            <input
-              type="hidden"
-              name="_next"
-              value="https://yourdomain.com/#contact"
-            />
-
-            <!-- nicer email formatting than the raw default -->
-            <input type="hidden" name="_template" value="table" />
-
-          <div class="text-center">
-            <button type="submit" class="btn btn-lg rounded-5 px-4 py-2 hero-cta">Send Message</button>
-          </div>
-        </form>
+  <div class="text-center">
+    <button type="submit" class="btn btn-lg rounded-5 px-4 py-2 hero-cta">Send Message</button>
+  </div>
+</form>
       </div>
     </section>
 
