@@ -77,6 +77,7 @@
     <a class="navbar-brand mono d-none d-sm-inline" href="#home">Roché le Roux</a>
     <ul class="navbar-nav flex-row align-items-center gap-3 gap-md-4 ms-sm-auto">
       <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#process">Process</a></li>
       <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
       <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
       <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -92,7 +93,7 @@
 <main id="main-content">
   <section
     id="home"
-    class="section-full d-flex flex-column justify-content-center py-5"
+    class="hero section-full d-flex flex-column justify-content-center py-5"
   >
     <div class="container">
       <p class="mono mb-4">01 / Home</p>
@@ -114,12 +115,67 @@
     </div>
   </section>
 
+  <!-- marquee strip -->
+
+  <div class="marquee" role="region" aria-label="What I do">
+  <div class="marquee-track">
+    <ul class="marquee-group">
+      <li class="mono">Landing pages</li>
+      <li class="mono">Small business sites</li>
+      <li class="mono">Semantic HTML</li>
+      <li class="mono">On-page SEO</li>
+      <li class="mono">Mobile-first</li>
+      <li class="mono">Fast load times</li>
+    </ul>
+    <ul class="marquee-group" aria-hidden="true">
+      <li class="mono">Landing pages</li>
+      <li class="mono">Small business sites</li>
+      <li class="mono">Semantic HTML</li>
+      <li class="mono">On-page SEO</li>
+      <li class="mono">Mobile-first</li>
+      <li class="mono">Fast load times</li>
+    </ul>
+  </div>
+</div>
+
+<!-- process section  -->
+
+<section id="process" class="section-block" aria-labelledby="process-heading">
+  <div class="container">
+    <p class="mono mb-3">02 / Process</p>
+    <h2 id="process-heading" class="section-title mb-5">How I <span class="accent">work</span>.</h2>
+
+    <ol class="process-grid">
+      <li class="process-step">
+        <span class="mono accent">01</span>
+        <h3 class="h5 mt-3">Discovery</h3>
+        <p class="work-text mb-0">We talk through your business, your customers and what you want the site to do.</p>
+      </li>
+      <li class="process-step">
+        <span class="mono accent">02</span>
+        <h3 class="h5 mt-3">Design &amp; build</h3>
+        <p class="work-text mb-0">I build it mobile-first with clean code and optimised images. You see progress as we go.</p>
+      </li>
+      <li class="process-step">
+        <span class="mono accent">03</span>
+        <h3 class="h5 mt-3">Launch</h3>
+        <p class="work-text mb-0">Domain, hosting, sitemap and Search Console are set up so Google can find you.</p>
+      </li>
+      <li class="process-step">
+        <span class="mono accent">04</span>
+        <h3 class="h5 mt-3">Support</h3>
+        <p class="work-text mb-0">I stay on for updates and fixes so the site keeps working for you.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
   <!-- work section -->
 
   <section id="work"  class="section-block" aria-labelledby="work-heading">
     <div class="container">
 
-    <p class="mono mb-3">02 / Work</p>
+    <p class="mono mb-3">03 / Work</p>
     <h2 id="work-heading" class="section-title mb-5">Selected <span class="accent">work</span>.</h2>
     <div class="row g-4">
 
@@ -188,7 +244,7 @@
 
 <section id="about"  class="section-block" aria-labelledby="about-heading">
   <div class="container">
-    <p class="mono mb-3">03 / About</p>
+    <p class="mono mb-3">04 / About</p>
     <h2 id="about-heading" class="section-title mb-5">Where marketing <span class="accent">meets code</span>.</h2>
 
     <div class="row align-items-center g-4 g-lg-5">
@@ -220,10 +276,11 @@
 </section>
 
 <!-- contact section -->
-<section
-  id="contact" class=" class="section-block aria-labelledby="work-heading">
+
+
+<section id="contact" class="section-block" aria-labelledby="contact-heading">
   <div class="container">
-    <p class="mono mb-3">04 / Contact</p>
+    <p class="mono mb-3">05 / Contact</p>
     <h2 id="contact-heading" class="section-title mb-5">
       Let's work <span class="accent">together</span>.
     </h2>
@@ -309,9 +366,20 @@
   </div>
 </footer>
 
+<a
+  href="https://wa.me/27629001998"
+  target="_blank"
+  rel="noopener"
+  class="whatsapp-btn position-fixed bottom-0 end-0 m-3 me-xl-5"
+  aria-label="Chat with me on WhatsApp"
+>
+  <img src="images/whatsapp.svg" alt="" width="28" height="28">
+</a>
+
 <!-- ruler html -->
 
 <aside class="ruler d-none d-xl-flex" aria-hidden="true">
+  <span id="rulerSection" class="ruler-section mono"></span>
   <div class="ruler-track">
     <div class="ruler-marker">
       <span id="rulerPercent" class="ruler-percent mono">000%</span>
